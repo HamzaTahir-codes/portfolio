@@ -20,6 +20,30 @@ const JOKES = [
   'Firmware engineers don’t have bugs. We have undocumented hardware features.',
   'Why did the packet cross the network? It was retransmitted.',
   'There are 10 kinds of people: those who read binary, and those who scrolled past this line.',
+    // embedded
+  'My ESP32 and I have an understanding. I don’t ask about the watchdog, it doesn’t reset during demos.',
+  'printf debugging on a microcontroller: when the bug disappears the moment you try to look at it.',
+  'I don’t always test my firmware, but when I do, it’s in production. Kidding. Mostly.',
+  'There are two hard things in embedded: memory, memory, and off-by-one errors.',
+  'FreeRTOS taught me patience. Every task gets its turn. Unlike my weekend.',
+  'Hardware engineer: “It’s a software bug.” Software engineer: “It’s a hardware bug.” Me, doing both: “...it’s a me bug.”',
+  // mobile
+  'Android: works on 2,000 devices. iOS: works on 1 device, if the provisioning profile is in a good mood.',
+  'I don’t fear production bugs. I fear “Your provisioning profile has expired.”',
+  'Cross-platform means writing it once and debugging it twice.',
+  'MVVM: because one layer of indirection was never going to be enough.',
+  // data
+  'My model has 99% recall. The other 1% is why I still have a job.',
+  'Data cleaning is 80% of data science. The other 20% is complaining about data cleaning.',
+  'I asked my Isolation Forest what was wrong with the data. It said “you, mostly.”',
+  'SQL query walks into a bar, sees two tables and asks: “Can I JOIN you?”',
+  // general dev life
+  'Git commit -m "final fix". Git commit -m "final fix 2". Git commit -m "ok actually final".',
+  'It’s not a bug, it’s an undocumented feature waiting for a patent.',
+  'I have a joke about UDP, but you might not get it.',
+  'I would tell you a TCP joke, but I’d have to keep repeating it until you acknowledged it.',
+  'Weekend plan: touch grass. Actual weekend: touch firmware.',
+  'Load shedding taught me more about graceful degradation than any textbook.',
 ];
 
 const COMMANDS = ['about', 'projects', 'open ', 'skills', 'experience', 'resume', 'socials', 'message', 'joke', 'clear', 'history', 'exit', 'help', 'whoami'];
