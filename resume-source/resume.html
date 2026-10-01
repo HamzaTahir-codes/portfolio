@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Muhammad Hamza Tahir · Resume</title>
+
+<style>
+@font-face{font-family:'Space Grotesk';font-weight:400;src:url('../node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-400-normal.woff2') format('woff2');}
+@font-face{font-family:'Space Grotesk';font-weight:500;src:url('../node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.woff2') format('woff2');}
+@font-face{font-family:'Space Grotesk';font-weight:600;src:url('../node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-600-normal.woff2') format('woff2');}
+@font-face{font-family:'Space Grotesk';font-weight:700;src:url('../node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-700-normal.woff2') format('woff2');}
+@font-face{font-family:'JetBrains Mono';font-weight:400;src:url('../node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2') format('woff2');}
+@font-face{font-family:'JetBrains Mono';font-weight:500;src:url('../node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2') format('woff2');}
+@page { size: A4; margin: 11mm 13mm; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 9.1pt; line-height: 1.38; color: #0E1726; }
+a { color: inherit; text-decoration: none; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+header { border-top: 3px solid #0E1726; border-bottom: 1px solid #0E1726; padding: 8px 0 9px; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; }
+h1 { margin: 0; font-size: 23pt; line-height: 1; letter-spacing: -0.03em; font-weight: 600; }
+.role { margin: 4px 0 0; font-size: 10.5pt; color: #2B3747; }
+.contact { flex: 0 0 auto; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 7.8pt; line-height: 1.6; color: #2B3747; }
+h2 { margin: 9px 0 4px; font-family: 'JetBrains Mono', monospace; font-size: 8.4pt; font-weight: 500; letter-spacing: 0.06em; color: #1D4ED8; border-bottom: 1px solid #DCE2EA; padding-bottom: 3px; }
+p { margin: 0; }
+.summary { color: #2B3747; }
+.skills { display: grid; grid-template-columns: 112px 1fr; row-gap: 2px; column-gap: 10px; }
+.skills b { font-weight: 600; }
+.job { margin-top: 5px; }
+.job-head { display: flex; justify-content: space-between; gap: 12px; }
+.job-head b { font-weight: 600; font-size: 10pt; }
+.when { font-family: 'JetBrains Mono', monospace; font-size: 7.8pt; color: #4A5668; white-space: nowrap; }
+.sub { margin-top: 4px; font-style: italic; color: #4A5668; font-size: 8.8pt; }
+ul { margin: 2px 0 0; padding-left: 14px; }
+li { margin: 1.5px 0; }
+.tags { font-family: 'JetBrains Mono', monospace; font-size: 7.6pt; color: #4A5668; font-weight: 400; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+</style>
+</head>
+<body>
+<header>
+<div>
+<h1>Muhammad Hamza Tahir</h1>
+<p class="role">Development Engineer · Firmware, Mobile and Data</p>
+</div>
+<div class="contact">
+Lahore, Pakistan<br>
+<a href="mailto:m.hamza.codes@gmail.com">m.hamza.codes@gmail.com</a><br>
+<a href="https://www.linkedin.com/in/m-hamza-tahir-dev-eng">linkedin.com/in/m-hamza-tahir-dev-eng</a><br>
+<a href="https://github.com/HamzaTahir-codes">github.com/HamzaTahir-codes</a>
+</div>
+</header>
+
+<h2>SUMMARY</h2>
+<p class="summary">I build products end to end, from ESP32 firmware to the mobile app that talks to it. At Robusys I wrote the device firmware and I'm the sole mobile engineer on its companion app, which I took from an empty project to release on Android and iOS. IBM-certified Data Analyst who built an Airflow-orchestrated fraud detection pipeline in Python and PostgreSQL.</p>
+
+<h2>SKILLS</h2>
+<div class="skills">
+<b>Languages</b><span>C, C#, Python, SQL, JavaScript</span>
+<b>Embedded</b><span>ESP32, FreeRTOS, Wi-Fi, BLE, packet-based protocols</span>
+<b>Mobile</b><span>.NET MAUI, XAML, MVVM, iOS (AccessorySetupKit, NEHotspotConfigurationManager), Android, biometric auth</span>
+<b>Data</b><span>pandas, scikit-learn, PostgreSQL, ETL, Airflow, Jupyter, Excel, Cognos, Plotly, Streamlit</span>
+<b>Web &amp; tools</b><span>Django, DRF, REST APIs, WebSockets, React, Three.js, Docker, Git</span>
+</div>
+
+<h2>EXPERIENCE</h2>
+<div class="job">
+<div class="job-head"><span><b>Development Engineer</b>, Robusys · Lahore (on-site)</span><span class="when">Sep 2025 to Present</span></div>
+<p class="sub">Device firmware (ESP32)</p>
+<ul>
+<li>Wrote the ESP32 firmware from an early prototype, including a packet-based command protocol for communication with the mobile app.</li>
+<li>Built the command parsing and execution layer, tuned memory use and message flow, and ship features and field fixes each release.</li>
+</ul>
+<p class="sub">Companion mobile app (.NET MAUI, C#, XAML)</p>
+<ul>
+<li>Sole mobile engineer: took a cross-platform app from an empty project to release on Android 10+ and iOS 18+.</li>
+<li>Designed an MVVM architecture with interface-based services and platform-specific code; built custom controls where stock MAUI fell short.</li>
+<li>Added Admin and Standard User roles with role-scoped biometric login and per-user credentials.</li>
+<li>Reached full iOS parity after Android launch: UINavigationController stack sync, a custom swipe-back gesture, provisioning profiles, and device pairing via AccessorySetupKit and NEHotspotConfigurationManager.</li>
+</ul>
+<p class="sub">Patent documentation</p>
+<ul><li>Drafted technical documentation and claims for the company's patent filings with the engineering team.</li></ul>
+</div>
+<div class="job">
+<div class="job-head"><span><b>Technical Research and Development Associate</b>, Logithoroughfare AB · Sweden (remote)</span><span class="when">Jan 2024 to Aug 2025</span></div>
+<ul>
+<li>Researched technical and market questions using 20+ sources; wrote technical documents, process flows and first patent drafts; built landing pages and internal tools.</li>
+</ul>
+</div>
+
+<h2>PROJECTS</h2>
+<div class="job" style="margin-top: 3px">
+<div class="job-head"><span><b>Welfare Fraud Detection Pipeline</b> <span class="tags">Python · PostgreSQL · Airflow · Docker · scikit-learn · Streamlit</span></span><span class="when">2026</span></div>
+<ul>
+<li>10-stage pipeline joining three disconnected sources (5,090 beneficiary, 18,844 payment, 6,040 national ID records); pandas ETL that flags instead of deleting, loaded into PostgreSQL.</li>
+<li>Benchmarked rules, RapidFuzz record linkage and Isolation Forest against 390 planted cases: 99% ensemble recall, 40/40 duplicate identities, Isolation Forest recall 12% → 84% (ROC-AUC 0.972).</li>
+<li>Orchestrated as an Airflow DAG in Docker with a regression quality gate and a Streamlit dashboard.</li>
+</ul>
+</div>
+<div class="job">
+<div class="job-head"><span><b>Smart Solar Inverter, real-time IoT monitoring</b> <span class="tags">ESP32 · Django</span></span><span class="when">2024 to 2025</span></div>
+<ul><li>AC/DC power monitoring, from ESP32 firmware to a live Django dashboard with under 2 s latency.</li></ul>
+</div>
+<div class="job">
+<div class="job-head"><span><b>ExplorOut</b>, freelance e-commerce platform <span class="tags">Django</span> · <b>Zeroth</b>, 3D portfolio <span class="tags">React · Three.js · DRF</span></span><span class="when">2025</span></div>
+</div>
+
+<div class="two">
+<div>
+<h2>CERTIFICATION</h2>
+<p><b>IBM Data Analyst Professional Certificate</b>, IBM via Coursera · Aug 2026</p>
+<p style="color: #4A5668">3-month training by EXD under NAVTTC · credential BX5HAG96Y4E9</p>
+</div>
+<div>
+<h2>EDUCATION</h2>
+<p><b>BS Computer Science</b>, The Islamia University of Bahawalpur · 2025</p>
+<p style="color: #4A5668">CGPA 3.32 / 4.00</p>
+</div>
+</div>
+</body>
+</html>
